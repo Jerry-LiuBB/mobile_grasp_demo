@@ -156,7 +156,7 @@ class RobotController:
         msg.position = position
         self.r_gripper_pub.publish(msg)
         
-    def control_r_gripper(self, position=550):
+    def control_l_gripper(self, position=550):
         """
         控制左夹爪
         position: 夹爪位置0-1000
@@ -202,9 +202,6 @@ class RobotController:
             #self.control_base_continuous(linear_x=0.1, angular_z=0.2, duration=3.0)
             #rospy.sleep(4.0)
             # 7. 夹爪打开（释放物体）
-            rospy.loginfo("Opening gripper to release object...")
-            self.control_gripper(position=1000)  # 打开夹爪
-            rospy.sleep(2.0)
             
             rospy.loginfo("Closing right gripper ...")
             self.control_r_gripper(position=0)  # 打开夹爪
