@@ -1,0 +1,30 @@
+{
+    "left_arm": {
+        "host": "169.254.128.18",
+        "port": 8080,
+        "camera_sn": "215322074604",
+        "target_class": "bottle"
+    },
+    "right_arm": {
+        "host": "169.254.128.19",
+        "port": 8080,
+        "camera_sn": "215322074604",
+        "target_class": "bottle"
+    },
+    "chassis": {
+        "scan_marker": "A",
+        "drop_marker": "B"
+    },
+    "vision": {
+        "model_path": "yolov8n.pt",
+        "timeout": 30
+    },
+    "camera_calibration": {
+        "rotation_matrix": [
+            [0, 1, 0],
+            [-1, 0, 0],
+            [0, 0, 1]
+        ],
+        "translation_vector": [-0.08, -0.02, -0.105]
+    }
+}
