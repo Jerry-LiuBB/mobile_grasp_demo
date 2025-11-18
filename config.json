@@ -21,10 +21,43 @@
     },
     "camera_calibration": {
         "rotation_matrix": [
-            [0, 1, 0],
-            [-1, 0, 0],
-            [0, 0, 1]
+            [
+                0,
+                1,
+                0
+            ],
+            [
+                -1,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                1
+            ]
         ],
-        "translation_vector": [-0.08, -0.02, -0.105]
+        "translation_vector": [
+            -0.08,
+            -0.02,
+            -0.105
+        ]
+    },
+    "head_servo": {
+        "serial": {
+            "port": "/dev/ttyUSB3",
+            "baudrate": 9600,
+            "timeout": 2.0,
+            "write_timeout": 2.0,
+            "frequency": 10
+        },
+        "servo_ranges": {
+            "1": {"min": 400, "max": 600, "name": "抬头/低头舵机"},
+            "2": {"min": 200, "max": 800, "name": "左转/右转舵机"}
+        },
+        "target_angles": {
+            "servo1": 500,
+            "servo2": 500
+        }
     }
 }
